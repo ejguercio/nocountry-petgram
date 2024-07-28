@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-roboto;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-body-md font-roboto;
+}
+
+#root {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+
+.scrollbarCustom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbarCustom::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-[#F06900] to-[#C31A02];
+  border-radius: 3px;
+}
